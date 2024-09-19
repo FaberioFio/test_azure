@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0" version="24.7.14">
   <diagram name="Page-1" id="L-jd7t1zlxfzM4xkEq1I">
-    <mxGraphModel dx="391" dy="353" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="794" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -120,6 +120,24 @@
           <mxGeometry x="0.1479" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="sK_yhxDqAa6OsqGFPy9--39" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://eltallerdelbit.com/wp-content/uploads/2018/04/portainer-docker.png;" vertex="1" parent="1">
+          <mxGeometry x="617.94" y="350" width="214.12" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sK_yhxDqAa6OsqGFPy9--40" value="Search" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="210" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sK_yhxDqAa6OsqGFPy9--41" value="Dashboard" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="203.86" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sK_yhxDqAa6OsqGFPy9--42" value="Nodes A" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="292" y="165.70999999999998" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sK_yhxDqAa6OsqGFPy9--43" value="Nodes B" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="301" y="300" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sK_yhxDqAa6OsqGFPy9--44" value="Nodes C" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="301" y="436.71" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
