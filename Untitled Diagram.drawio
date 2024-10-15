@@ -208,8 +208,8 @@
         <mxCell id="4w3Nj_wHKEkUA-O2rkVW-12" value="Lambda" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="524.75" y="500" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="4w3Nj_wHKEkUA-O2rkVW-17" value="&lt;b&gt;Pipeline 2&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="630" y="458" width="60" height="30" as="geometry" />
+        <mxCell id="4w3Nj_wHKEkUA-O2rkVW-17" value="&lt;b&gt;Pipeline 1&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="631" y="458" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="7kGCBSwBYtiU43HcWGbW-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="H4yflijEu1tVJ6YrY11g-14">
           <mxGeometry relative="1" as="geometry">
@@ -224,7 +224,7 @@
         <mxCell id="7kGCBSwBYtiU43HcWGbW-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H4yflijEu1tVJ6YrY11g-14" target="hJE6HdYvSHdutJNPKk4N-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="7kGCBSwBYtiU43HcWGbW-6" value="&lt;b&gt;Pipeline 1&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="7kGCBSwBYtiU43HcWGbW-6" value="&lt;b&gt;Pipeline 2&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="626.75" y="216" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="7kGCBSwBYtiU43HcWGbW-7" value="Kinesis Data Stream" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
