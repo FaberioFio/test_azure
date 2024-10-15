@@ -209,6 +209,9 @@
         <mxCell id="4w3Nj_wHKEkUA-O2rkVW-15" value="" style="fillColor=none;strokeColor=#5A6C86;dashed=1;verticalAlign=top;fontStyle=0;fontColor=#5A6C86;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="680" y="61" width="160" height="470" as="geometry" />
         </mxCell>
+        <mxCell id="4w3Nj_wHKEkUA-O2rkVW-17" value="&lt;b&gt;Pipeline 2&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="458" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
