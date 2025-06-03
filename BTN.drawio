@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0" version="27.1.3">
   <diagram name="Page-1" id="OEKFfMH_OTiZ_qOjaAbR">
-    <mxGraphModel dx="1010" dy="515" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1234" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -186,6 +186,14 @@
         </mxCell>
         <mxCell id="RjtxKORx6J7O7LgqOXKw-58" value="" style="rounded=1;arcSize=10;dashed=1;strokeColor=#F59D56;fillColor=none;gradientColor=none;dashPattern=8 4;strokeWidth=2;" parent="RjtxKORx6J7O7LgqOXKw-29" vertex="1">
           <mxGeometry x="110" y="380" width="440" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nUeZr9KWxaVTWW3aNAhu-28" value="" style="strokeColor=#dddddd;fillColor=#FFFFFF;shadow=1;strokeWidth=1;rounded=1;absoluteArcSize=1;arcSize=2;" vertex="1" parent="RjtxKORx6J7O7LgqOXKw-29">
+          <mxGeometry x="157.5" y="200" width="95" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="nUeZr9KWxaVTWW3aNAhu-29" value="NAT" style="sketch=0;dashed=0;connectable=0;html=1;fillColor=#757575;strokeColor=none;shape=mxgraph.gcp2.nat;part=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=5;fontSize=12;" vertex="1" parent="nUeZr9KWxaVTWW3aNAhu-28">
+          <mxGeometry y="0.5" width="32" height="32" relative="1" as="geometry">
+            <mxPoint x="5" y="-16" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="RjtxKORx6J7O7LgqOXKw-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="RjtxKORx6J7O7LgqOXKw-37" target="RjtxKORx6J7O7LgqOXKw-34" edge="1">
           <mxGeometry relative="1" as="geometry" />
