@@ -1,0 +1,85 @@
+
+<mxfile host="app.diagrams.net">
+  <diagram name="AWS Architecture" id="diagram-1">
+    <mxGraphModel dx="1422" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Pengguna -->
+        <mxCell id="2" value="Pengguna/Klien Eksternal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="180" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- Internet Gateway -->
+        <mxCell id="3" value="Internet Gateway" style="shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="80" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" style="endArrow=block;html=1;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- WAF -->
+        <mxCell id="5" value="AWS WAF" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f4cccc;" vertex="1" parent="1">
+          <mxGeometry x="440" y="140" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" style="endArrow=block;html=1;" edge="1" parent="1" source="3" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- API Gateway -->
+        <mxCell id="7" value="Amazon API Gateway" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d9ead3;" vertex="1" parent="1">
+          <mxGeometry x="420" y="200" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" style="endArrow=block;html=1;" edge="1" parent="1" source="5" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- VPC Link Branch -->
+        <mxCell id="9" value="VPC Link
+(Internal NLB)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="280" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" style="endArrow=block;html=1;" edge="1" parent="1" source="7" target="9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="240" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ALB Publik Branch -->
+        <mxCell id="11" value="ALB Publik
+(opsional)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="280" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" style="endArrow=block;html=1;" edge="1" parent="1" source="7" target="11">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- VPC Box -->
+        <mxCell id="13" value="VPC: ap-southeast-3 (Jakarta)" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=20;fillColor=#e0e0e0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="360" width="720" height="260" as="geometry"/>
+        </mxCell>
+
+        <!-- Private Subnet -->
+        <mxCell id="14" value="Private Subnet" style="swimlane;fillColor=#e2f0d9;startSize=20;" vertex="1" parent="13">
+          <mxGeometry width="360" height="240" as="geometry"/>
+        </mxCell>
+
+        <!-- BackEnd I -->
+        <mxCell id="15" value="BackEnd I" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="14">
+          <mxGeometry x="20" y="40" width="100" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- BackEnd II -->
+        <mxCell id="16" value="BackEnd II" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="14">
+          <mxGeometry x="20" y="100" width="100" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- RDS -->
+        <mxCell id="17" value="Amazon RDS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d6dce4;" vertex="1" parent="14">
+          <mxGeometry x="150" y="70" width="120" height="40" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
