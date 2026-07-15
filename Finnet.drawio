@@ -1,9 +1,123 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="cwG-CnZXrIX3rvlxzODS">
-    <mxGraphModel>
+    <mxGraphModel dx="1229" dy="857" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-101" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#005073;fontColor=#000000;fontStyle=1" value="Merchant &amp; Tim Internal&#xa;(Mitra Finpay, DTP, INTAN)" vertex="1">
+          <mxGeometry height="80" width="40" x="1780" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-102" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;shadow=1;fontStyle=1" value="Google Cloud Armor&#xa;(WAF &amp; DDoS Protection)" vertex="1">
+          <mxGeometry height="50" width="200" x="1500" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-103" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;shadow=1;fontStyle=1" value="Cloud Load Balancing&#xa;(L7 HTTP/S Proxy)" vertex="1">
+          <mxGeometry height="50" width="200" x="1500" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-104" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#E8F0FE;strokeColor=#1A73E8;fontStyle=1;shadow=1;rounded=1;" value="VPC Network: vpc-finnet-prod (10.10.0.0/16) | Region: asia-southeast2 (Jakarta)" vertex="1">
+          <mxGeometry height="660" width="760" x="1240" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-105" parent="RY1Kk8fBtVRv7M6ra6cI-104" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#D5E8D4;strokeColor=#82B366;fontStyle=1;rounded=1;dashed=1;" value="Subnet 1: Frontend / Presentation Layer (10.10.1.0/24)" vertex="1">
+          <mxGeometry height="130" width="680" x="40" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-106" parent="RY1Kk8fBtVRv7M6ra6cI-105" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;shadow=1;fontStyle=1" value="Frontend Services (Laravel)&#xa;Cloud Run / GKE&#xa;- DTP finpay.id&#xa;- INTAN Dashboard" vertex="1">
+          <mxGeometry height="60" width="240" x="220" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-107" parent="RY1Kk8fBtVRv7M6ra6cI-104" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#D5E8D4;strokeColor=#82B366;fontStyle=1;rounded=1;dashed=1;" value="Subnet 2: Core Middleware Layer (10.10.2.0/24) - Private" vertex="1">
+          <mxGeometry height="200" width="680" x="40" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-108" parent="RY1Kk8fBtVRv7M6ra6cI-107" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;shadow=1;fontStyle=1" value="Finnet Core KYB Engine&#xa;(Golang / Microservices)&#xa;API Gateway &amp; Orchestrator" vertex="1">
+          <mxGeometry height="70" width="200" x="90" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-109" parent="RY1Kk8fBtVRv7M6ra6cI-107" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;shadow=1;fontStyle=1" value="Risk / Decision Engine&#xa;(Golang / Rule-based)&#xa;Auto-Decisioning Log" vertex="1">
+          <mxGeometry height="70" width="200" x="390" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-110" parent="RY1Kk8fBtVRv7M6ra6cI-107" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;shadow=1;" value="Cloud NAT (Egress)" vertex="1">
+          <mxGeometry height="30" width="120" x="40" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-111" parent="RY1Kk8fBtVRv7M6ra6cI-104" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#D5E8D4;strokeColor=#82B366;fontStyle=1;rounded=1;dashed=1;" value="Subnet 3: Data Storage Layer (10.10.3.0/24) - Isolated" vertex="1">
+          <mxGeometry height="180" width="680" x="40" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-112" parent="RY1Kk8fBtVRv7M6ra6cI-111" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;shadow=1;fontStyle=1" value="Cloud SQL (MySQL)&#xa;Encrypted Database" vertex="1">
+          <mxGeometry height="80" width="140" x="130" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-113" parent="RY1Kk8fBtVRv7M6ra6cI-111" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#DAE8FC;strokeColor=#6C8EBF;shadow=1;fontStyle=1" value="Cloud SQL (PostgreSQL)&#xa;Audit Trail &amp; Logs" vertex="1">
+          <mxGeometry height="80" width="140" x="420" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-114" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;shadow=1;fontStyle=1" value="Gitlab CI/CD&#xa;Repository &amp; Automation" vertex="1">
+          <mxGeometry height="60" width="160" x="1050" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-115" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#F5F5F5;strokeColor=#666666;shadow=1;" value="Cloud Storage&#xa;Daily &amp; Weekly Backup" vertex="1">
+          <mxGeometry height="80" width="130" x="1070" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-116" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;shadow=1;fontStyle=1;align=left;spacingLeft=10;" value="Security &amp; Observability&#xa;- Cloud IAM &amp; SSO&#xa;- Cloud KMS (Encryption)&#xa;- Cloud Logging &amp; Monitoring" vertex="1">
+          <mxGeometry height="100" width="220" x="2140" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-117" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;shadow=1;fontStyle=1" value="Google Cloud APIs&#xa;- Vision API&#xa;- Natural Language API" vertex="1">
+          <mxGeometry height="80" width="180" x="2030" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-118" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;shadow=1;fontStyle=1" value="Vendor Provider API&#xa;- AML, PPATK, PEP&#xa;- Dukcapil, SIPP&#xa;- Web Crawling &amp; OCR" vertex="1">
+          <mxGeometry height="90" width="170" x="1050" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-119" edge="1" parent="1" source="RY1Kk8fBtVRv7M6ra6cI-101" target="RY1Kk8fBtVRv7M6ra6cI-102">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-120" edge="1" parent="1" source="RY1Kk8fBtVRv7M6ra6cI-102" target="RY1Kk8fBtVRv7M6ra6cI-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-121" edge="1" parent="1" source="RY1Kk8fBtVRv7M6ra6cI-103" target="RY1Kk8fBtVRv7M6ra6cI-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-122" edge="1" parent="1" source="RY1Kk8fBtVRv7M6ra6cI-106" target="RY1Kk8fBtVRv7M6ra6cI-108">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-123" edge="1" parent="1" source="RY1Kk8fBtVRv7M6ra6cI-108" target="RY1Kk8fBtVRv7M6ra6cI-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-124" edge="1" parent="1" source="RY1Kk8fBtVRv7M6ra6cI-108" style="entryX=0.334;entryY=-0.016;entryDx=0;entryDy=0;entryPerimeter=0;" target="RY1Kk8fBtVRv7M6ra6cI-112">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-125" edge="1" parent="1" source="RY1Kk8fBtVRv7M6ra6cI-109" target="RY1Kk8fBtVRv7M6ra6cI-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-126" edge="1" parent="1" source="RY1Kk8fBtVRv7M6ra6cI-108" target="RY1Kk8fBtVRv7M6ra6cI-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-127" edge="1" parent="1" source="RY1Kk8fBtVRv7M6ra6cI-110" target="RY1Kk8fBtVRv7M6ra6cI-118">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-128" edge="1" parent="1" source="RY1Kk8fBtVRv7M6ra6cI-108" target="RY1Kk8fBtVRv7M6ra6cI-117">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-129" edge="1" parent="1" source="RY1Kk8fBtVRv7M6ra6cI-112" target="RY1Kk8fBtVRv7M6ra6cI-115">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1390" y="1090" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-130" edge="1" parent="1" source="RY1Kk8fBtVRv7M6ra6cI-113" target="RY1Kk8fBtVRv7M6ra6cI-115">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1660" y="1120" />
+              <mxPoint x="1620" y="1160" />
+              <mxPoint x="1440" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-131" edge="1" parent="1" source="RY1Kk8fBtVRv7M6ra6cI-109" target="RY1Kk8fBtVRv7M6ra6cI-116">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2130" y="865" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RY1Kk8fBtVRv7M6ra6cI-132" edge="1" parent="1" source="RY1Kk8fBtVRv7M6ra6cI-114" target="RY1Kk8fBtVRv7M6ra6cI-105">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1130" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
